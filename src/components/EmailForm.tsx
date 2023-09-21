@@ -25,7 +25,7 @@ export const EmailForm = () => {
             <div
               key={key}
               className={`flex flex-col gap-2 ${
-                getInfo(key).required ? "col-span-1" : "col-span-2"
+                getInfo(key).required ? "lg:col-span-1 col-span-2" : "col-span-2"
               }`}
             >
               <label className="capitalize font-bold text-sm">
