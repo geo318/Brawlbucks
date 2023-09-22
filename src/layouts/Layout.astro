@@ -23,7 +23,7 @@ import Menu from "@/menu.astro";
       class="absolute flex 2xl:inset-x-28 lg:inset-x-14 inset-x-10 items-center"
     >
       <Logo /><span class="logo">Brawlbucks</span><div
-        class="font-extrabold lg:text-lg text-sm ml-auto cursor-pointer"
+        class="font-extrabold lg:text-lg text-sm ml-auto cursor-pointer z-10"
         id="trigger"
       >
         What we do
@@ -49,7 +49,7 @@ import Menu from "@/menu.astro";
   </body>
 </html>
 
-<script>
+<script is:inline>
   const trigger = document.getElementById("trigger");
   const menu = document.getElementById("menu");
   const overlay = document.getElementById("overlay");
@@ -81,7 +81,7 @@ import Menu from "@/menu.astro";
 </script>
 
 <style is:global>
-  @import url(//fonts.googleapis.com/earlyaccess/nicomoji.css);
+  @import url("//fonts.googleapis.com/earlyaccess/nicomoji.css");
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
 
   html {
