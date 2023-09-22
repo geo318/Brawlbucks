@@ -10,16 +10,19 @@ import Menu from "@/menu.astro";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Braulbucks</title>
+    <title>Brawlbucks</title>
   </head>
-  <body class="xl:p-28 lg:p-14 p-10 min-h-screen flex flex-col relative">
+  <body class="2xl:p-28 lg:p-14 p-10 min-h-screen flex flex-col relative">
     <div id="menu" class="hidden z-50"><Menu /></div>
-    <div id="overlay" class="hidden fixed inset-0 bg-black bg-opacity-80 z-20 cursor-pointer">
+    <div
+      id="overlay"
+      class="hidden fixed inset-0 bg-black bg-opacity-80 z-20 cursor-pointer"
+    >
     </div>
     <header
-      class="absolute flex xl:inset-x-28 lg:inset-x-14 inset-x-10 items-center"
+      class="absolute flex 2xl:inset-x-28 lg:inset-x-14 inset-x-10 items-center"
     >
-      <Logo /><span class="logo">Braulbucks</span><div
+      <Logo /><span class="logo">Brawlbucks</span><div
         class="font-extrabold lg:text-lg text-sm ml-auto cursor-pointer"
         id="trigger"
       >
@@ -35,10 +38,14 @@ import Menu from "@/menu.astro";
     <slot />
     <a
       class="fixed bottom-10 w-24 h-24 rounded-full mx-auto bg-white z-10 flex items-center justify-center text-sm font-medium self-center protfolio transition-all"
-      href=""
+      href="https://linktr.ee/brawlbucks"
+      target="_blank"
     >
       Protfolio
     </a>
+    <footer class="absolute 2xl:right-28 lg:right-14 right-10 bottom-6">
+      Copyright © 2023 all rights reserved
+    </footer>
   </body>
 </html>
 
