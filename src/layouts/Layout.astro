@@ -1,7 +1,6 @@
 ---
 import Logo from "@/Logo.astro";
 import Menu from "@/menu.astro";
-import og from "@public/og.svg"
 ---
 
 <html lang="en">
@@ -11,7 +10,12 @@ import og from "@public/og.svg"
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <meta property="og:image" content={og.src} />
+    <meta property="og:title" content="brawlbucks">
+    <meta property="og:site_name" content="Brawlbucks">
+    <meta property="og:url" content=https://brawlbucks.com>
+    <meta property="og:description" content="Your Imagination, Our Expertise: Crafting Remarkable Websites. We’re good people, contact us!">
+    <meta property="og:type" content=website>
+    <meta property="og:image" content="/og.png">
     <title>Brawlbucks</title>
   </head>
   <body class="2xl:p-28 lg:p-14 p-10 min-h-screen flex flex-col relative">
